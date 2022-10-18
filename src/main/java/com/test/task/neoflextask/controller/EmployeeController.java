@@ -15,7 +15,7 @@ public class EmployeeController {
     
     EmployeeService employeeService = new EmployeeService();
 
-    @GetMapping("/getVacationPay")
+    @GetMapping("/calculacte")
     public ResponseEntity<Double> getVacationPay(@RequestBody Employee employee) {
         System.out.println(employee);
         Double vacationPay = employeeService.getVacationPay(employee);
