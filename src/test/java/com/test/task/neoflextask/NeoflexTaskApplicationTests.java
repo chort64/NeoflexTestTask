@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.task.neoflextask.model.Employee;
-import com.test.task.neoflextask.model.OwnDate;
+import com.test.task.neoflextask.model.MyDate;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -25,8 +25,8 @@ class NeoflexTaskApplicationTests {
 	@Test
 	public void test() throws Exception {
 		
-		OwnDate vacDates[] = { new OwnDate(1, 1), new OwnDate(1, 2)
-							 , new OwnDate(1, 3), new OwnDate(2, 1)};
+		MyDate vacDates[] = { new MyDate(1, 1), new MyDate(1, 2)
+							 , new MyDate(1, 3), new MyDate(2, 1)};
 
 		Employee employee = new Employee(100000, vacDates);
 

@@ -8,6 +8,6 @@ import lombok.Data;
 public class Employee {
 
     private Integer averageSalaryForYear;
-    private OwnDate vacationDays[];
+    private MyDate vacationDays[];
     
 }

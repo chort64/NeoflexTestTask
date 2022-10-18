@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class OwnDate {
+public class MyDate {
 
     private Integer month;
     private Integer day;
