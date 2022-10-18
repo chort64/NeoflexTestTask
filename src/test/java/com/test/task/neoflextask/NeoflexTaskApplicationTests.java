@@ -32,7 +32,7 @@ class NeoflexTaskApplicationTests {
 
 		ObjectMapper mapper = new ObjectMapper();
 
-		mockMvc.perform(get("http://localhost:8080/api/getVacationPay")
+		mockMvc.perform(get("http://localhost:8080/api/calculacte")
 			.contentType("application/json")
 			.content(mapper.writeValueAsString(employee)))
 			.andDo(print())
